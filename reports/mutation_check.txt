@@ -1,0 +1,12 @@
+Mutation sanity check (deliberate faults injected into registration_service/app.py)
+-----------------------------------------------------------------------------------
+M1  MAX_COURSES 3 -> 4                         CAUGHT by test_tc10_max_courses_boundary
+M2  lockout threshold 3 -> 4 failed logins     CAUGHT by test_tc03_account_locks_after_three_failures
+M3  prerequisite check removed                 CAUGHT by test_tc07_missing_prerequisite_rejected
+M4  query length limit off-by-one (>= 50)      CAUGHT by test_tc05_query_length_boundary
+M5  free-seat check removed                    CAUGHT by test_tc08 and test_tc13
+M6  X-Frame-Options header removed             CAUGHT by test_tc12_hostile_input_and_security_headers
+M7  lock around check-then-enrol removed       NOT CAUGHT (test_tc13 passed 30/30 runs on the mutant)
+
+Result: 6 of 7 mutants detected. The surviving mutant shows that the concurrency test
+has weak defect-finding power inside a single Python process (GIL).

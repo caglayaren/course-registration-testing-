@@ -1,0 +1,19 @@
+test_tc01_valid_login_returns_token (tests.test_registration_api.LoginTests.test_tc01_valid_login_returns_token) ... ok
+test_tc02_wrong_password_rejected (tests.test_registration_api.LoginTests.test_tc02_wrong_password_rejected) ... ok
+test_tc03_account_locks_after_three_failures (tests.test_registration_api.LoginTests.test_tc03_account_locks_after_three_failures) ... ok
+test_tc06_eligible_student_can_register (tests.test_registration_api.RegistrationTests.test_tc06_eligible_student_can_register) ... ok
+test_tc07_missing_prerequisite_rejected (tests.test_registration_api.RegistrationTests.test_tc07_missing_prerequisite_rejected) ... ok
+test_tc08_full_course_rejected (tests.test_registration_api.RegistrationTests.test_tc08_full_course_rejected) ... ok
+test_tc09_duplicate_registration_rejected (tests.test_registration_api.RegistrationTests.test_tc09_duplicate_registration_rejected) ... ok
+test_tc10_max_courses_boundary (tests.test_registration_api.RegistrationTests.test_tc10_max_courses_boundary) ... ok
+test_tc13_last_seat_is_given_to_exactly_one_student (tests.test_registration_api.ReliabilityAndPerformanceTests.test_tc13_last_seat_is_given_to_exactly_one_student) ... ok
+test_tc14_search_performance_smoke (tests.test_registration_api.ReliabilityAndPerformanceTests.test_tc14_search_performance_smoke) ... ok
+test_tc04_search_is_case_insensitive_and_partial (tests.test_registration_api.SearchTests.test_tc04_search_is_case_insensitive_and_partial) ... ok
+test_tc05_query_length_boundary (tests.test_registration_api.SearchTests.test_tc05_query_length_boundary) ... ok
+test_tc11_protected_endpoints_require_valid_token (tests.test_registration_api.SecurityTests.test_tc11_protected_endpoints_require_valid_token) ... ok
+test_tc12_hostile_input_and_security_headers (tests.test_registration_api.SecurityTests.test_tc12_hostile_input_and_security_headers) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.144s
+
+OK
